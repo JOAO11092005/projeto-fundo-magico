@@ -103,6 +103,7 @@
     border-radius: 0px;
     border-top: 1px solid red;
     width: 50%;
+    max-height: 400px;
 }
 
 .codeTitle {
@@ -118,8 +119,25 @@
     font-size: 14px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    overflow-y: auto;
+    height: 70%;
 }
-
+.AvisoEstilo{
+     width: 70%;
+     margin:  0 auto;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+  align-items: center;
+  justify-content: center;
+  display: none;
+  transition: 0.5 ease-in-out;
+  padding: 10px;
+}
 @media(max-width: 670px) {
     body{
         background: url('https://i.pinimg.com/736x/d0/b3/93/d0b3938ae867417e36f00fad6e01030a.jpg') center center no-repeat;

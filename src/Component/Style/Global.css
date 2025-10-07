@@ -6,9 +6,9 @@
     
 }
 body{
-    background-color: #0f131a;
     color: #ffffff;
     background: url(https://images6.alphacoders.com/134/thumb-1920-1341623.png);
+    background-size: cover;
      font-family: "Roboto", sans-serif;
     line-height: 1.4;
     padding: 32px 24px;
