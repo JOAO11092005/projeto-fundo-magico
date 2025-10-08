@@ -68,6 +68,9 @@
     color: rgba(255, 255, 255, 0.716);
     font-size: 19px;
 }
+.btnText{
+   width: 100%; 
+}
 
 .btnMagic {
     width: 100%;

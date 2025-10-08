@@ -66,7 +66,8 @@ const form = () => {
         let btn = document.getElementById('btn-text');
         if (isLoading) {
 
-            btn.innerText = "Carregando..."
+            btn.innerHTML = `<img style="width: 10%;
+    height: 30px;" src="https://i.pinimg.com/originals/e2/63/00/e26300c0c746d3163a0f48223c897cee.gif"  alt="Loading" />`
 
         } else {
             btn.innerText = "Gerar Background Mágico"
@@ -88,8 +89,8 @@ const form = () => {
             <form className='form-group' id='form-group' onSubmit={enviar}>
                 <textarea id="description" placeholder="Ex: Um gradiente azul suave que vai azul claro ao azul escuro." rows="5" className={Estilo.formGroupTextArea} onChange={(e) => Digitado(e.target.value)}></textarea>
 
-                <button id="generate-btn" className={Estilo.btnMagic} >
-                    <span id="btn-text" onClick={() => setLoading(true)}>Gerar Background Mágico</span>
+                <button id="generate-btn" className={Estilo.btnMagic} onClick={() => setLoading(true)}>
+                    <span id="btn-text" className={Estilo.btnText} >Gerar Background Mágico</span>
                 </button>
             </form>
 
